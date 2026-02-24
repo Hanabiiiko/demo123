@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Базовый шаблон{% endblock %} </title>
+    <style>
+        header {
+            width: 100vw;
+            height: 100px;
+            border-radius: 13px;
+            background-color: black;
+            color:white;
+            padding: 10px;
+            margin: 7px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Обувной магазин</h1>
+    </header>
+    {% block content %}
+        Содержимое по умолчанию (Будет заменено в дочерних шаблонах)
+    {% endblock %}
+</body>
+</html>
